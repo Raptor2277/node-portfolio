@@ -13,4 +13,5 @@ app.get("/", function(req,res){
 })
 
 var port = process.env.port || 8080;
+console.log("Up on port " + port);
 app.listen(port);
