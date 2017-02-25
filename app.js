@@ -9,6 +9,7 @@ app.set("json spaces", 3)
 app.use("/api", apiRouter)
 
 app.get("/", function(req,res){
+	console.log("get request");
     res.end("Hello World")
 })
 
