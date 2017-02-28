@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './')));
-//app.use(addressParser);
+app.use(addressParser);
 
 app.use('/', index);
 app.use('/users', users);

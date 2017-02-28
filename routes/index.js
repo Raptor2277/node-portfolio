@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log(req.connection.remoteAddressIpv4);
+  console.log(req.connection.remoteAddress);
   res.end("hello world");
 });
 
