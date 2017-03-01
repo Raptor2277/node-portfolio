@@ -1,8 +1,100 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+    background-color: #313A49;
 }
 
-a {
-  color: #00B7FF;
+.header{
+    margin: 0em;
+    color: white;
+}
+
+#container{
+    width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*============================== navbar stuff */
+
+#nav-bar{
+    margin-top: 1em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #666666;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+  background-color: #0067cd;
+  background-color: #000;
+}
+
+.active {
+  background-color: #0099FF;
+}
+
+/*============================content stuff=================*/
+
+#content{
+    padding: 1em 1em 1em 1em;
+    background-color: white;
+    margin-top: 1em;
+    box-shadow: 1em 1em 1em 1em #212A39;
+    overflow: auto;
+}
+
+.section{
+    box-shadow: .3em .3em .3em .3em #a8aeb8;
+    margin-bottom: 2em;
+    width: 49%;
+}
+
+.section h2{
+    margin: 0;
+    padding: .5em;
+    background-color: #0099FF;
+    color: white;
+}
+
+.section .img-container{
+    margin: 1em;
+    height: 20em;
+    line-height: 20em;
+    text-align: center;
+    background-color: white;
+}
+
+.section img{
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/*==================================footer==============*/
+
+#footer{
+    margin-top: 1em;
+    height: 5em;
+}
+
+#footer h3{
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: block;
 }
