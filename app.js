@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var handlebars = require("express-handlebars");
 
 var home = require('./routes/home');
-var resume = require('./routes/resume');
 var cpp = require('./routes/cpp');
 var csharp = require('./routes/csharp');
 var java = require('./routes/java');
@@ -42,7 +41,6 @@ app.get('/index', function(req, res, next)
 });
 
 app.use('/', home);
-app.use('/resume', resume);
 app.use('/cpp', cpp);
 app.use('/csharp', csharp);
 app.use('/java', java);
