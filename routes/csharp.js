@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
    req.connection.remoteAddress || 
    req.socket.remoteAddress ||
    req.connection.socket.remoteAddress;*/
-  res.render('charpt.hbs', { title: 'C# Project Page', csharp: 'active' });
+  res.render('csharp.hbs', { title: 'C# Project Page', csharp: 'active' });
 });
 
 module.exports = router;

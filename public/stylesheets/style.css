@@ -29,14 +29,17 @@ ul {
 
 li {
     float: left;
+    min-width: 5em;
 }
 
-li a {
+/*==========dropdown*/
+li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1em;
     text-decoration: none;
+    border-right: .1em solid #444444;
 }
 
 li a:hover{
@@ -62,6 +65,7 @@ li a:hover{
     box-shadow: .3em .3em .3em .3em #a8aeb8;
     margin-bottom: 2em;
     width: 49%;
+    display: inline-block;
 }
 
 .section h2{
@@ -83,6 +87,36 @@ li a:hover{
     max-height: 100%;
     max-width: 100%;
     vertical-align: middle;
+}
+
+.section p{
+    margin: 1em;
+    height: 5em;
+}
+
+.section form{
+    margin: 1em;
+    float: right;
+    display: inline-block;
+}
+
+.full{
+    width: 99%;
+}
+
+.full .img-container
+{
+    height: 30em;
+}
+
+/*===============================media===================*/
+
+.media{
+    padding-bottom: 2em;
+    width: 40em;
+    height: 30em;
+    display: block;
+    margin: auto;
 }
 
 /*==================================footer==============*/

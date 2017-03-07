@@ -12,6 +12,10 @@ var cpp = require('./routes/cpp');
 var csharp = require('./routes/csharp');
 var java = require('./routes/java');
 var arduino = require('./routes/arduino');
+var opengl = require('./routes/opengl');
+
+var solarSystem = require('./routes/solarSystem');
+var rubiksSube = require('./routes/rubiksCube');
 
 var app = express();
 
@@ -43,6 +47,9 @@ app.use('/cpp', cpp);
 app.use('/csharp', csharp);
 app.use('/java', java);
 app.use('/arduino', arduino);
+app.use('/opengl', opengl);
+app.use('/solar_system', solarSystem);
+app.use('/rubiks_cube', rubiksSube);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

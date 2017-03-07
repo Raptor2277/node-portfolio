@@ -1,0 +1,70 @@
+
+{{>section name='Input Simlator' 
+    float='left' 
+    img-link="images/csharp/InputSimulator.png"
+    download = 'downloads/csharp/BetterInputSimulator.zip'
+    github = ''
+    summary = 'Using a custom dll, I recreated the C++ input simulator in C# 
+    to increase functionality and ease of use. The DLL makes lower level calls 
+    so it works on almost all applications.'
+}}
+
+
+{{>section name='Tree Growth' 
+    float='right'
+    img-link="images/csharp/TreeGrowth.png"
+    download = 'downloads/csharp/TreeGrowth.zip'
+    github = ''
+    summary = 'My own version of a fractal tree. 
+    It supports different inputs to change the generation of the tree.'
+}}
+
+
+{{>section name='Light Rays' 
+    float='left'
+    img-link="images/csharp/LightRays.png"
+    download = 'downloads/csharp/LightRays.zip'
+    github = ''
+    summary = 'My initial project with a focus into lighting. The engine casts 
+    rays at each vertex of each polygon, stopping at an intersection with an edge.
+    This will create an array of intersections which can be used to fill a polygon with color. The polygon is where the light can reach.'
+}}
+
+
+{{>section name='Shadow Engine' 
+    float='right'
+    img-link="images/csharp/ShadowEngine.png"
+    download = 'downloads/csharp/ShadowEngine.zip'
+    github = ''
+    summary = 'Using the Light Rays engine as a base, I ported it to the SFML 
+    framework which uses OpenGL. The rendering process starts with the scene, 
+    generates the ligthmap and draws shadows where the light doesn\'t reach. 
+    I also added a shader for light fading.'
+}}
+
+{{>section name='Normal Map Lighting' 
+    float='left'
+    img-link="images/csharp/NormalMaps.png"
+    download = 'downloads/csharp/NormalMapping.zip'
+    github = ''
+    summary = 'This project was a test to see how normal maps work. 
+    The engine lights the texture based on the normal vector of the pixel. 
+    The further away the vector points away from the light, the darker the pixel
+    becomes. This creates a 3D lighting effect even though the texture is 2D.'
+}}
+
+
+{{>section name='Light Engine' 
+    float='right'
+    img-link="images/csharp/LightEngine.png"
+    download = 'downloads/csharp/LightEngine.zip'
+    github = ''
+    summary = 'The Shadow Engine had some major flaws. First, it was very 
+    inneficient due to lengthy calculations every frame. Second, it was very hard
+    to implement multiple light sources. This engine works the other way. 
+    Instead of drawing shadows it darkens the scene and draws the lights using 
+    additive color blending. It is much much faster and easily supports multiple
+    lights with different colors.'
+}}
+
+<h2>You might also be interested in <a href="/opengl">C# Projects using OpenGL</a>.</h2>

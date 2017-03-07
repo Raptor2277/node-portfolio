@@ -1,5 +1,20 @@
 <div class="section" style="float: {{float}}">
     <h2>{{name}}</h2>
-    <div class="img-container"><a href="{{img-link}}"><img src="{{img-link}}"></a></div>
-    
+    <div class="img-container">
+        <a href="{{img-link}}"><img src="{{img-link}}"></a>
+    </div>
+    <p>
+        {{summary}}
+    </p>
+    {{#if github}}
+    <form action="{{github}}">
+        <input type="submit" value="GitHub" />
+    </form>
+    {{/if}}
+
+    {{#if download}}
+    <form action="{{download}}">
+        <input type="submit" value="Download" />
+    </form>
+    {{/if}}
 </div>
