@@ -1,3 +1,4 @@
+
 body{
     background-color: #313A49;
 }
@@ -100,6 +101,12 @@ li a:hover{
     display: inline-block;
 }
 
+.section form input{
+    width: 8em;
+    height: 2em;
+    font-size: 10pt;
+}
+
 .full{
     width: 99%;
 }
@@ -111,10 +118,17 @@ li a:hover{
 
 /*===============================media===================*/
 
+iframe{
+    padding-bottom: 2em;
+    width: 70em;
+    height: 30em;
+    display: block;
+    margin: auto;
+}
+
 .media{
     padding-bottom: 2em;
-    width: 40em;
-    height: 30em;
+    max-width: 80%;
     display: block;
     margin: auto;
 }
