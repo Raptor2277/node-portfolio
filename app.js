@@ -43,10 +43,11 @@ app.use(function (req, res, next) {
     req.connection.remoteAddress ||
     req.socket.remoteAddress ||
     req.connection.socket.remoteAddress;
+  var path = req.path;
+  if (path == "/") path = "/home";
+  request.post('http://nitchii-logger.azurewebsites.net/' + ip + path);
 
-    request.post('http://nitchii-logger.azurewebsites.net/' + ip + req.path);
-
-    next();
+  next();
 });
 
 app.get('/index', function (req, res, next) {
