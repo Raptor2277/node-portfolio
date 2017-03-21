@@ -37,6 +37,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//keep alive ping
+app.get("/ping", function(req, res, next)
+{
+  res.end("ok");
+});
+
 //send post to private app to log access to this website
 app.use(function (req, res, next) {
   var ip = req.headers['x-forwarded-for'] ||
